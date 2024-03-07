@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Day</title>
+    <link href="static/search.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row text-center" style="margin:20px 0px 0px 20px;">
+        <div class="col-12">
+            <a href="/" class="back-button"> &lt;-Back</a>
+        </div>
+    </div>
+    <div class="header">
+        <h1 class="text">Search Name and Location Of Restaurant</h1>
+    </div>
+    <form action="/search" method="POST" class="rest">
+        <div class="search">
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="rating">Rating </label>
+                    <input type="text" class="form-control" min="1" id="people" name="rating" required>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="avg_Budget">Average Budget </label>
+                    <input type="text" class="form-control" min="1" id="people" name="avg_price" required>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="avg_delivery_time">Average Delivery Time </label>
+                    <input type="text" class="form-control" min="1" name="avg_delivery_time" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="form-group">
+                    <label for="south indian">South Indian </label>
+                    <input type="number" class="form-control" min="0" max="1" name="south_indian_or_not" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="form-group">
+                    <label for="north_indian">North Indian </label>
+                    <input type="number" class="form-control" min="0" max="1"  name="north_indian_or_not" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2"> 
+                <div class="form-group">
+                    <label for="fast_food">Fast Food </label>
+                    <input type="number" class="form-control" min="0" max="1" name="fast_food_or_not" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="form-group">
+                    <label for="street _food_or_not">Street Food</label>
+                    <input type="number" class="form-control" min="0" max="1" name="street_food" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="form-group">
+                    <label for="biryani_or_not">Biryani </label>
+                    <input type="number" class="form-control" min="0" max="1" name="biryani_or_not" required>
+                </div>
+            </div>
+            <div class="col-6 col-md-2">
+                <div class="form-group">
+                    <label for="bakery_or_not">Bakery </label>
+                    <input type="number" class="form-control" min="0" max="1" name="bakery_or_not" required>
+                </div>
+            </div>
+            <div class="row text-center" style="margin-top: 5vh;">
+                <div class="col-12">
+                    <button class="submit-button"> Restaurants</button>
+                </div>
+            </div>
+            {% if Restaurants%}
+                <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <p class="text-white"><h2>Restaurant is: {{ Restaurants['prediction']}}</h2></p>
+                    </div>
+                </div>
+            {% endif %}
+            
+        </div>
+    </form>
+</body>
+</html>

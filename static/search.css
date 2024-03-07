@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-image: url('head.png');
+    height: 100px;
+    display: flex;
+    width: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text{
+    margin-left:  500px;
+}
+.rest{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding-bottom: 330px;
+    background-color: rgba(255, 153, 0, 0.311);
+    background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');
+    background-size: cover;
+}
+.search {
+    align-items: center;
+    margin: 50px 0 0 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+    background-color: #0056b3; 
+}
+.card{
+    color: aquamarine;
+}
+

@@ -1,24 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="static/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700|Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="/static/home.css" rel="stylesheet">
+    <title>Every Day</title>
 </head>
 <body>
-    <h1>Student Login</h1>
-    <form>
+    <section class="navbar">
         <div class="container">
-            <label>Username:</label>
-            <input type="text" placeholder="Enter Username" name="username" required>
-            <label>Password:</label>
-            <input type="password" placeholder="Enter password" name="password" required>
-            <button type="submit">Login me</button>
-            <input type="checkbox" checked="checked">Remember 
-            <button type="button" class="btn">cancel</button>
-            Forgot<a href="#">password</a>
+            <div class="logo">
+                <a href="#" title="logo">
+                    <img src="/static/logo.png" 
+                    alt="restaurant logo" class="img-insert">
+                </a>
+            </div>
+            <div class="menu-text">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li> 
+                        <a href="/search">Search</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </form>
+    </section>
+    <section class="card">
+        <div class="body-content">
+            <h1>Your Own Restaurant</h1>
+            <br>
+            <p>Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your personal history, your province, your region, your tribe, your grandma. It's inseparable from those from the get-go.</p>
+
+        </div>
+    </section>
+    <br><br>
+    <div class="about">
+        <h3>About Us</h3>
+        <p>Although the skills aren't hard to learn, finding the happiness and finding the satisfaction and finding fulfillment in continuously serving somebody else something good to eat, is what makes a really good restaurant.</p>
+
+    </div>
+    <div class="img-glass"><a href="#"><img src="/static/img2.png" alt="random" class="img"></a></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="animate-charcter">Please Wait..</h4>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="msg">
+            <p>If you have a good experience in a restaurant, you tell 2 people. If you have a bad experience, you tell 10 people. </p>
+            <button class="btn"><a href=/contact >Contact Us</a></button>
+        </div>
+        <section class="social">
+            <div class="conatiner text-center">
+                <ul>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container text-center">
+                <p>All rights reserved. Designed By  <a href="#">Anonymous</a></p>
+            </div>
+        </section>
+    </section>
 </body>
 </html>
